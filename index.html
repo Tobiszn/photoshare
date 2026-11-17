@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhotoShare</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fafafa;
+  color: #262626;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo { color: #833ab4; font-size: 25px; font-weight: bold; }
+main { max-width: 550px; margin: 25px auto; padding: 10px; }
+.stories, .post {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.stories { display: flex; justify-content: space-around; }
+.story { text-align: center; font-size: 12px; }
+.circle {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#833ab4,#fd1d1d);
+  display: grid; place-items: center;
+  color: white; margin-bottom: 5px;
+}
+.photo {
+  height: 300px;
+  display: grid; place-items: center;
+  font-size: 75px;
+  background: linear-gradient(135deg,#c4b5fd,#fbcfe8);
+  margin-top: 12px;
+}
+</style>
+</head>
+<body>
+<header>
+  <span class="logo">PhotoShare</span>
+  <span>🏠　🔍　❤️　👤</span>
+</header>
+<main>
+  <section class="stories">
+    <div class="story"><div class="circle">👤</div>You</div>
+    <div class="story"><div class="circle">🌟</div>Alex</div>
+    <div class="story"><div class="circle">🎧</div>Jordan</div>
+    <div class="story"><div class="circle">🌴</div>Sam</div>
+  </section>
+
+  <article class="post">
+    <strong>alex_photos</strong>
+    <div class="photo">🌅</div>
+    <p>Beautiful evening views!</p>
+    ❤️ 12 likes
+  </article>
+
+  <article class="post">
+    <strong>jordan_daily</strong>
+    <div class="photo"
+      style="background:linear-gradient(135deg,#86efac,#60a5fa)">
+      🌴
+    </div>
+    <p>Weekend mood!</p>
+    ❤️ 28 likes
+  </article>
+</main>
+</body>
+</html>
